@@ -1,109 +1,176 @@
 @charset "UTF-8";
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    background-color: #1d2631;
+}
+
+
 header{
     height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(30, 50, 63, 0.671);
+    background-color: #1d2631;
+    border-bottom: 1px solid white;
+    
 }
 
 header h1 {
-    color: orange;
+    color: #e7e7e7;
     font-size: 3em;
 }
 .menu a{
     text-decoration: none;
-}
-
-a{  
-    color: orange;
-    border: 1px solid black;
-    background-color: rgb(5, 53, 83);
+    font-weight: bold;
+    border: 1px solid #e7e7e7;
+    background-color: #83a5b9;
     border-radius: 6px;
     padding: 3px;
 }
 
-a:hover{
-    background-color: rgb(48, 101, 134);
+
+.menu ul {
+    display: flex;
 }
 
+.menu li {
+    padding: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
 
+a:hover{
+    background-color: rgb(48, 101, 134);
+    color: #e7e7e7;
+}
+
+/* Primeiro H1 com Serralheria */
 .description{
-    height: 96vh;
     margin: auto;
+    background-color: #1d2631;
 }
 
 .nome_bg{
+    color: #e7e7e7;
     max-width: 960px;
-    height: 40vh;
     text-align: center;
     padding-top: 100px;
+    padding-bottom: 100px;
     margin: 0 auto;
+    border-bottom: 1px solid #999999;
+    
 }
 
 .nome_bg > h1{
     font-size: 4em;
+    color: #e7e7e7;
 }
 .nome_bg > p{
-    font-size: 1.2em;
-    color: rgb(119, 114, 114);
+    font-size: 1.25rem;
+    color: #999999;
 }
 
+/* Parte inferior da descrição */
 .desc_bg{
-    background: rgba(0, 0, 0, 0.103);
-    height: 60vh;
     text-align: center;
+    
 }
 
 .desc_flex  {
+    max-width: 960px;
     display: flex; 
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 30px;
+    border-bottom: 1px solid #999999;
+    margin: 0 auto;
+      
 }
 
-.desc {
-    padding-right: 50px;
+.desc h1{
+    color: #e7e7e7;
 }
 .desc > p{
-    width: 400px;
-    color: rgb(119, 114, 114);
-    font-size: 1.2em;
+    width: 350px;
+    color: #999999;
+    font-size: 1.25rem;
+    padding-bottom: 20px;
+    
 }
 div#imagem > img{
-    height: 40vh;
-    padding-left: 50px;
+    width: 300px;
+    border-radius: 20px;
 }
 
-.imagem1{
-    background-image: black url('imagens/Screenshot_2.png') center no-repeat fixed;
-    background-size: cover;
+/* LISTA DE PREÇO */
+
+.preco{
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 0 auto;
+    border-top: 1px solid #999999;
+    padding-top: 20px;
+}
+.preco-item{
+    border: 3px solid #999999;
+    border-radius: 8px;
+    flex: 1 1 250px;
+    margin: 15px;
+    text-align: center;
+    padding: 20px;
 }
 
+.preco-item h1{
+    color: #e7e7e7;
+    padding-bottom: 8px;
+}
 
+.preco-item li{
+    color: #999999;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.25rem;
+    text-align: center
+}
+
+.preco-item img {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* Projetos e fotos */
 
 .projeto{
-    background-color: #A2A79E;
-    height: 100vh;
+    
+    background-color: #1d2631;
 }
 .projeto-info{
-    text-align: center;
     font-size: 2em;
     padding: 30px;
 }
+
+.projeto-info h1 {
+    color: #e7e7e7;
+    text-align: center;
+}
 .projeto-foto{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+   
     
 }
 
@@ -111,12 +178,16 @@ div#imagem > img{
     width: 250px;
     height: 250px;
     padding: 15px;
-    
+    border-radius: 30px;
     
 }
 
-.final {
-    background: black url() center no-repeat fixed;
-    height: 100vh;
-    
+
+
+/* footer */
+
+footer{
+    background: #83a5b9;
+    text-align: center;
+    margin-top: 50px;
 }
