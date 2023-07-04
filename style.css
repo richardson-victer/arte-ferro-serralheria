@@ -119,7 +119,10 @@ div#imagem > img{
     align-items: center; 
     margin: 0 auto;
     border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
     padding-top: 20px;
+    padding-bottom: 20px;
+    
 }
 .preco-item{
     border: 3px solid #999999;
@@ -128,6 +131,8 @@ div#imagem > img{
     margin: 15px;
     text-align: center;
     padding: 20px;
+    
+    
 }
 
 .preco-item h1{
@@ -151,7 +156,6 @@ div#imagem > img{
 /* Projetos e fotos */
 
 .projeto{
-    
     background-color: #1d2631;
 }
 .projeto-info{
