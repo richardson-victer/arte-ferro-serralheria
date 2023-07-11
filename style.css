@@ -45,7 +45,7 @@ header h1 {
     list-style-type: none;
 }
 
-a:hover{
+.menu a:hover{
     background-color: rgb(48, 101, 134);
     color: #e7e7e7;
 }
@@ -194,4 +194,18 @@ footer{
     background: #83a5b9;
     text-align: center;
     margin-top: 50px;
+}
+
+/*BOTÃO DO WHATSAPP*/
+
+.whats {
+    position: fixed;
+    bottom: 10px; 
+    right: 10px; 
+    z-index: 9999;
+}
+
+.whats > a > img{
+    width: 100px;
+    height: 100px;
 }
