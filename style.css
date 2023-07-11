@@ -112,6 +112,7 @@ div#imagem > img{
 /* LISTA DE PREÇO */
 
 .preco{
+    max-width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -120,14 +121,13 @@ div#imagem > img{
     border-bottom: 1px solid #999999;
     padding-top: 20px;
     padding-bottom: 20px;
-    overflow-X: scroll;
+    overflow-x: scroll;
     
     
 }
 .preco-item{
     border: 3px solid #999999;
     border-radius: 8px;
-    flex: 1 1 400px;
     margin: 15px;
     text-align: center;
     padding: 20px;
@@ -150,7 +150,7 @@ div#imagem > img{
 }
 
 .preco-item img {
-    max-width: 50VW;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -210,3 +210,5 @@ footer{
     width: 100px;
     height: 100px;
 }
+
+
