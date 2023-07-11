@@ -58,6 +58,7 @@ header h1 {
 
 .nome_bg{
     color: #e7e7e7;
+    min-width: 300px;
     max-width: 900px;
     text-align: center;
     padding-top: 100px;
@@ -83,6 +84,7 @@ header h1 {
 }
 
 .desc_flex  {
+    min-width: 300px;
     max-width: 900px;
     display: flex; 
     justify-content: space-around;
@@ -112,6 +114,7 @@ div#imagem > img{
 /* LISTA DE PREÇO */
 
 .preco{
+    min-width: 300px;
     max-width: 900px;
     display: flex;
     justify-content: space-between;
@@ -172,6 +175,7 @@ div#imagem > img{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    min-width: 300px;
     max-width: 900px;
     margin: 0 auto;
     padding-bottom: 20px;
