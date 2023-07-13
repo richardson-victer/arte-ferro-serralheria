@@ -8,18 +8,22 @@
 </head>
 <body>
     <header>
-        <h1>LOGO</h1>
-        <div class="menu">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PROJETOS</a></li>
-                <li><a href="#">LISTA</a></li>
-                <li><a href="#">CONTATO</a></li>
+        <a href="#home">LOGO</a>
+
+        <nav id="nav">
+            <button id="btn-mobile">Menu</button>
+            <ul class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#moveis">MÓVEIS</a></li>
+                <li><a href="#projetos">PROJETOS</a></li>
             </ul>
-        </div>
+
+        </nav>
+        
+
     </header>
 
-    <section class="description">
+    <section class="description" id="home">
         <div class="nome_bg">
             <h1>Arte Ferro Serralheria</h1>
             <p>Móveis industriais e planejados feito com acabamento fino e de alto padrão, prezando pela melhor qualidade para o seu ambiente.</p>
@@ -38,7 +42,7 @@
         </div>
     </section>
 
-    <section class="preco">
+    <section class="preco" id="moveis">
         <div class="preco-item">
             <h1>CUBO INFINITO</h1>
             <img src="imagens/Screenshot_5.png" alt="">
@@ -95,7 +99,7 @@
         </div>
     </section>
 
-    <section class="projeto">
+    <section class="projeto" id="projetos">
         <div class="projeto-info">
             <h1>Alguns dos nossos projetos</h1>
         </div>
@@ -122,6 +126,6 @@
     <div class="insta">
         <a href="https://www.instagram.com/arteferroserralheria1/" target="_blank"><img src="imagens/Instagram_icon.png.webp" alt="Página do instagram" title="Página do instagram"></a>
     </div>
-
+    <link rel="stylesheet" href="script.js">
 </body>
 </html>
