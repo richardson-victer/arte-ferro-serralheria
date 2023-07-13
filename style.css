@@ -250,17 +250,14 @@ footer{
     }
 
     .menu {
-        /* display: none; */
-        display: block;
+        display: none;
         position: absolute;
-        width: 100%;
-        top: 11vh;
+        width: 50%;
+        top: 10vh;
         right: 0px;
-        background-color: black;
-        
+        background-color: #0303037a;
+        height: 100vh;
+        z-index: 1000;
     }
 
-    #nav.active .menu {
-        display: flex;
-    }
 }
