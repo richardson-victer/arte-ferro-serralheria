@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arte Ferro Serralheria</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body onresize="mudouTamanho()">
-    <header>
-        <a href="#home">LOGO</a>
-
-        <nav id="nav">
-            <button id="btn-mobile" onclick="clickMenu()">Menu</button>
-            <ul class="menu" id="menu">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#moveis">MÓVEIS</a></li>
-                <li><a href="#projetos">PROJETOS</a></li>
+<body>
+    
+    <!--CABEÇALHO + MENU-->
+    <header class="header-bg">
+        <div class="header-logo"><a href="home">LOGO</a></div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#moveis">Móveis</a></li>
+                <li><a href="#projetos">Projetos</a></li>
             </ul>
-
         </nav>
-        
+        <div class="header-menu-mobile">
+            <button class="menu-mobile">
+                <img class="menu-button" src="imagens/VisualEditor_-_Icon_-_Menu.svg.png" alt="menu-mobile">
+            </button>
+        </div>  
+    </header><!--CABEÇALHO + MENU-->
 
-    </header>
-
+    <!--DESCRIÇÃO-->
     <section class="description" id="home">
         <div class="nome_bg">
             <h1>Arte Ferro Serralheria</h1>
@@ -40,8 +44,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!--DESCRIÇÃO-->
 
+
+    <!--PREÇO DOS MÓVEIS-->
     <section class="preco" id="moveis">
         <div class="preco-item">
             <h1>CUBO INFINITO</h1>
@@ -97,8 +103,9 @@
                 <li>Prazo: 15 Dias úteis</li>
             </ul>
         </div>
-    </section>
+    </section><!--PREÇO DOS MÓVEIS-->
 
+    <!--PROJETOS-->
     <section class="projeto" id="projetos">
         <div class="projeto-info">
             <h1>Alguns dos nossos projetos</h1>
@@ -109,35 +116,33 @@
             <img src="imagens/Screenshot_3.png" alt="foto3">
             <img src="imagens/Screenshot_4.png" alt="foto4">
             <img src="imagens/Screenshot_5.png" alt="foto5">
-            <img src="imagens/pexels-leo-sacchi-15675803.jpg" alt="foto6">
-            
+            <img src="imagens/Screenshot_6.png" alt="foto6"> 
+            <img src="imagens/Screenshot_8.png" alt="foto7"> 
+            <img src="imagens/Screenshot_9.png" alt="foto8">   
         </div>
-    </section>
+    </section><!--PROJETOS-->
 
     <footer>
         <p>CRIADO POR RICHARDSON VICTER - ARTE FERRO SERRALHERIA</p>
     </footer>
 
-
-    <div class="whats"> 
-        <a href="https://wa.me/5521965818040" target="_blank"><img src="imagens/logo-whatsapp-png_optimized.webp" alt="Fale Conosco pelo whtasapp" title="Fale Conosco pelo whtasapp"></a>
+    <!--REDES SOCIAIS-->
+    <div class="whats">
+        <a href="https://wa.me/5521965818040"><img src="imagens/logo-whatsapp-png_optimized.webp" alt="Fale conosco pelo whatsapp"></a>
     </div>
 
     <div class="insta">
-        <a href="https://www.instagram.com/arteferroserralheria1/" target="_blank"><img src="imagens/Instagram_icon.png.webp" alt="Página do instagram" title="Página do instagram"></a>
-    </div>
-
+        <a href="https://www.instagram.com/arteferroserralheria1/"><img src="imagens/Instagram_icon.png.webp" alt="Página do instagram"></a>
+    </div><!--REDES SOCIAIS-->
 
 
     <script>
-        
-function clickMenu(){
-    if (menu.style.display == 'block'){
-        menu.style.display = 'none'
-    } else {
-        menu.style.display ='block'
-    }
-}
+       const navbar = document.querySelector('.header-bg');
+       const menuMobile = document.querySelector('.header-menu-mobile')
+
+       menuMobile.addEventListener('click', () => {
+        navbar.classList.toggle('show-menu');
+       })
     </script>
 </body>
 </html>
