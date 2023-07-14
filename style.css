@@ -304,11 +304,11 @@ footer{
         grid-template-columns: repeat(2, 1fr);
 }
     .preco-item{
-        width: 200px
+        width: 150px
     }
     .preco-item img {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         
     }
     /*FIM DO PREÇO*/
