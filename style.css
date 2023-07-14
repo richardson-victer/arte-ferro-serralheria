@@ -113,6 +113,7 @@ header {
 
 .desc h1{
     color: #e7e7e7;
+    padding-bottom: 15px;
 }
 .desc > p{
     width: 350px;
