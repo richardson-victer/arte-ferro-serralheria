@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header-bg">
-
+    <header class="header-bg show-menu">
         <div class="header-logo"><a href="home">LOGO</a></div>
-
         <nav class="header-nav">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -19,22 +17,43 @@
                 <li><a href="#">Projetos</a></li>
             </ul>
         </nav>
-
         <div class="header-menu-mobile">
             <button class="menu-mobile">
-                <img src="imagens/VisualEditor_-_Icon_-_Menu.svg.png" alt="menu-mobile">
+                <img class="menu-button" src="imagens/VisualEditor_-_Icon_-_Menu.svg.png" alt="menu-mobile">
             </button>
         </div>
+
+        
     </header>
 
+    <div class="whats">
+        <a href="https://wa.me/5521965818040"><img src="imagens/logo-whatsapp-png_optimized.webp" alt="Fale conosco pelo whatsapp"></a>
+    </div>
+
+    <div class="insta">
+        <a href="https://www.instagram.com/arteferroserralheria1/"><img src="imagens/Instagram_icon.png.webp" alt="Página do instagram"></a>
+    </div>
+
     <section class="carrosel-bg">
-        <ul>
-            <li><img src="#" alt="imagem1"></li>
-            <li><img src="#" alt="imagem2"></li>
-            <li><img src="#" alt="imagem3"></li>
-            <li><img src="#" alt="imagem4"></li>
-            <li><img src="#" alt="imagem5"></li>
-        </ul>
+        <div class="carrosel">
+            <ul>
+                <li><img src="imagens/Screenshot_1.png" alt="imagem1"></li>
+                <li><img src="imagens/Screenshot_2.png" alt="imagem2"></li>
+                <li><img src="imagens/Screenshot_3.png" alt="imagem3"></li>
+                <li><img src="imagens/Screenshot_5.png" alt="imagem4"></li>
+                <li><img src="imagens/Screenshot_6.png" alt="imagem5"></li>
+            </ul>
+        </div>
     </section>
+
+
+    <script>
+       const navbar = document.querySelector('.header-bg');
+       const menuMobile = document.querySelector('.header-menu-mobile')
+
+       menuMobile.addEventListener('click', () => {
+        navbar.classList.toggle('show-menu');
+       })
+    </script>
 </body>
 </html>
