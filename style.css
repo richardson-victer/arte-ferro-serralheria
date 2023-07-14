@@ -23,12 +23,19 @@ html{
 }
 
 header {
+    z-index: 9999;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
+.logo-img{
+    margin-top: 10px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
 
 .header-logo a {
     color: white;
@@ -101,7 +108,6 @@ header {
 }
 
 .desc_flex  {
-    min-width: 300px;
     max-width: 1200px;
     display: flex; 
     justify-content: space-around;
@@ -268,6 +274,7 @@ footer{
     .header-logo{
         margin: 0px 60px;
     }
+
     .header-menu-mobile{
         display: block;
         margin: 0px 30px;
