@@ -267,6 +267,7 @@ footer{
 @media (max-width: 800px){
 
     /*INICIO DO HEADER*/
+    
     header{
         display: flex;
         justify-content: space-between;
