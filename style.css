@@ -23,7 +23,7 @@ html{
 }
 
 header {
-    height: 50px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -33,7 +33,7 @@ header {
 .header-logo a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;   
+    font-size: 2.5rem;   
 }
 
 .header-nav ul {
